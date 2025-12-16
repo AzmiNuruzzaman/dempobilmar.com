@@ -1,0 +1,44 @@
+@import './fonts.css';
+@import './tailwind.css';
+@import './theme.css';
+@import './carousel.css';
+
+/* Language Switcher Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+/* React Slick Carousel Additional Styles */
+.slick-dots {
+  bottom: -40px !important;
+}
+
+.slick-dots li button:before {
+  font-size: 12px !important;
+  color: #008300 !important;
+  opacity: 0.4 !important;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1 !important;
+  color: #008300 !important;
+}
+
+.slick-slide > div {
+  display: flex;
+}
+
+.carousel-container {
+  padding-bottom: 60px;
+}
